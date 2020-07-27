@@ -16,6 +16,7 @@ WineFood.destroy_all
 user1 = User.create(name: 'Anil', age: 28, email: '1234@gmail.com')
 user2 = User.create(name: 'Komal', age: 29, email: '123@gmail.com')
 user3 = User.create(name: 'Tom', age: 34, email: '111@gmail.com')
+user4 = User.create(name: 'John', age: 25, email: 'aa@gmail.com')
 
 wine1 = Wine.create(name: 'Oyster Bay Marlborough Sauvignon Blanc', img:'https://products2.imgix.drizly.com/ci-oyster-bay-sauvignon-blanc-7dd230c281360dab.png?auto=format%2Ccompress&fm=jpg&q=20', video:'https://youtu.be/OFSRINIHR3M', year:'2000', category: 'White', ABV: '13%', description:"The philosophy of Oyster Bay is to produce fine, distinctively regional wines that are elegant and assertive with glorious fruit flavors. Oyster Bay Sauvignon Blanc is the wine that started it all. Which happened to win the best Sauvignon Blanc in the world. Its brilliant clarity, extraordinary aromatic flavors and refreshing zest are both thrilling and enthralling.")
 wine2 = Wine.create(name: 'Kim Crawford Sauvignon Blanc', img:'https://products3.imgix.drizly.com/ci-kim-crawford-sauvignon-blanc-3e0d9d465b786741.jpeg?auto=format%2Ccompress&fm=jpg&q=20', video:'https://youtu.be/1n7pEh3H0gg', year:'1996', category: 'White', ABV: '13%', description:"Kim Crawford Sauvignon Blanc White Wine is fresh and juicy with ripe, tropical flavors of passion fruit, melon and stone fruit. Each glass of wine reveals classic Marlborough sauvignon blanc aromas of lifted citrus, tropical fruit and crushed herbs, along with vibrant acidity and plenty of weight and length on the palate.")
@@ -53,7 +54,8 @@ wine31 = Wine.create(name: 'Bogle Petite Sirah', img:'https://products0.imgix.dr
 food1 = Food.create(name: "Pizza")
 food2 = Food.create(name: "Indian")
 food3 = Food.create(name: "Chinese")
-food4 = Food.create(name: "Dessert")
+food4 = Food.create(name:"Italian")
+food5 = Food.create(name: "Dessert")
 
 user_wines1 = UserWine.create(user_id: user1.id, wine_id: wine3.id)
 user_wines2 = UserWine.create(user_id: user3.id, wine_id: wine2.id)
